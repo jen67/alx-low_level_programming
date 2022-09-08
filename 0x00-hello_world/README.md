@@ -1,9 +1,11 @@
-a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+a C program that prints the size of various types on the computer it is compiled and run on.
 
 
 
-You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+You should produce the exact same output as in the example
 
-Your program should return 1
+Warnings are allowed
 
-Your program should compile without any warnings when using the -Wall gcc option
+Your program should return 0
+
+You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
