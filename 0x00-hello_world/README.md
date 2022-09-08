@@ -1,11 +1,9 @@
-a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
 
 
-The C file name will be saved in the variable $CFILE.
+You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
 
-The output file should be named the same as the C file, but with the extension .s instead of .c.
+Your program should return 1
 
-Example: if the C file is main.c, the output file should be main.s
-
-
+Your program should compile without any warnings when using the -Wall gcc option
