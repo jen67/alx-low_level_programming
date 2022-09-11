@@ -1,25 +1,15 @@
-This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.
+Write a program that prints all possible combinations of single-digit numbers.
 
 
 
-You can find the source code here
+Numbers must be separated by ,, followed by a space
 
-The variable n will store a different value every time you run this program
+Numbers should be printed in ascending order
 
-You don’t have to understand what rand, srand, and RAND_MAX do. Please do not touch this code
+You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
 
-The output of the program should be:
+All your code should be in the main function
 
-The string Last digit of, followed by
+You can only use putchar four times maximum in your code
 
-n, followed by
-
-the string is, followed by
-
-if the last digit of n is greater than 5: the string and is greater than 5
-
-if the last digit of n is 0: the string and is 0
-
-if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
-
-followed by a new line
+You are not allowed to use any variable of type char
