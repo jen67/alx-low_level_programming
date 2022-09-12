@@ -1,37 +1,19 @@
-My Drive
-
 #include <stdio.h>
 
 /**
- *
- *  * main - print if the number is postive, zero, or negative
- *
- *   *
- *
- *    * Description: using the main function
- *
- *     * this program prints "Programming is positive, zero, or negative
- *
- *      * Return: 0
- *
- *       */
-
+ * main - Prints the numbers since 0 to 9
+ * Return: Always (Success)
+ */
 int main(void)
-
 {
-
-	int n;
+		int n;
 
 	for (n = '0'; n <= '9'; n++)
-
 	{
-
-			putchar(n);
-
+		putchar(n);
 	}
 
-	putchar('\n');
+		putchar('\n');
 
-	return (0);
-
-} 
+		return (0);
+}
