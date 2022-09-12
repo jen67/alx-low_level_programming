@@ -1,29 +1,39 @@
 #include <stdio.h>
+
+
 /**
- * main - print possible combination of two 2-digit
- * numbers
- *
- * Return: returns zero at the end
+ * main - main - Prints 3 combination of number
+ * Return: always (success)
  */
 int main(void)
 {
-	int i, p;
+	int c, i, k, j;
 
-	for (i = 0; i < 100; i++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (p = 0; p < 100; j++)
+		for (i = 48; i <= 57; i++)
 		{
-			if  (p > i)
+			for (k = 48; k <= 57; k++)
 			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
-				putchar(' ');
-				putchar((p / 10) + '0');
-				putchar((p % 10) + '0');
-				if (i != 98)
+				for (j = 48; j <= 57; j++)
 				{
+				if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+					putchar(c);
+					putchar(i);
+					putchar(' ');
+					putchar(k);
+					putchar(j);
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
 					putchar(',');
 					putchar(' ');
+					}
+					}
 				}
 			}
 		}
@@ -31,4 +41,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
