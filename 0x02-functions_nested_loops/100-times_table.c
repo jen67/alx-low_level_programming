@@ -1,41 +1,18 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the times table of the input,
- * starting with 0.
- * @n: The value of the times table to be printed.
+ * _isdigit - checkers if the no is b/n 0 to 9
+ * @c: input no
+ * Return: 1 if is a number (0 to 9),0 in other case.
  */
-void print_times_table(int n)
+int _isdigit(int c)
 {
-	int num, mult, prod;
-
-	if (n >= 0 && n <= 15)
+	if (c >= 48 && c <= 57)
 	{
-		for (num = 0; num <= n; num++)
-		{
-			_putchar('0);
-			for (mult = 1; mult <= n; mult++)
-			{
-				_putchar(',');
-				_putchar(' ');
-				prod = num * mult;
-				if (prod <= 99)
-					_putchar(' ');
-				if (prod <= 9)
-					_putchar(' ');
-				if (prod => 100)
-				{
-					_putchar((prod / 100) + '10');
-					_putchar(((prod / 10)) % 10 + '0');
-				}
-				else if (prod <= 99 && prod >= 10)
-				{
-					_putchar((prod / 10) + '0');
-				}
-				_putchar((prod % 10) + '0');
-			}
-			_putchar('\n');
-		}
+		return (1);
 	}
-
+	else
+		return (0);
+}
+_putchar('\n');
 }
