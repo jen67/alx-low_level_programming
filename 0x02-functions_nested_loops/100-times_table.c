@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * _isdigit - checkers if the no is b/n 0 to 9
- * @c: input no
- * Return: 1 if is a number (0 to 9),0 in other case.
+ * print_times_table - prints a multiplication table up to param
+ * main - check the code.
+ *
+ * Return: Always 0
  */
-int _isdigit(int c)
+int main(void)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	else
-		return (0);
-}
-_putchar('\n');
+	print_times_table(3);
+	_putchar('\n');
+	print_times_table(5);
+	 _putchar('\n');
+	   print_times_table(98);
+	   _putchar('\n');
+	   print_times_table(12);  
+	   return (0);
 }
