@@ -1,30 +1,13 @@
 #include "main.h"
 
 /**
- * print_triangle - function that prints a square, followed by a new line
- *  @size: size of triangle
- *  Return: nothing.
+ * mul - function that multiplies two integers.
+ * @a: first input value to check
+ * @b: Sec input value to check
+ * Return: int.
  */
 
-void print_triangle(int size)
+int mul(int a, int b)
 {
-	int row, col, aux;
-
-	if (size > 0)
-	{
-		for (row = 0; row < size; row++)
-		{
-			for (col = 0; col < size; col++)
-			{
-				aux = (size - row) - 1;
-				if (col < aux)
-					_putchar(' ');
-				else
-					_putchar(35);
-			}
-			_putchar('\n');
-		}
-	}
-	else
-		_putchar('\n');
+	return (a * b);
 }
