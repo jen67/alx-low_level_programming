@@ -4,22 +4,19 @@
  * print_number - Prints any integer with putchar
  * @n: Number to prints
  *
- * Return: Nothing
+ * Return: Always 0.
  */
-void print_number(int n)
+int main(void)
 {
-	unsigned int x;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
-
-	x = n;
-
-	if (x / 10)
-		print_number(x / 10);
-
-	_putchar(x % 10 + '0');
+	 print_number(98);
+	  _putchar('\n');
+	  print_number(402);
+	   _putchar('\n');
+	    print_number(1024);
+	     _putchar('\n');
+	     print_number(0);
+	     _putchar('\n');
+	     print_number(-98);
+	      _putchar('\n');
+	      return (0);
 }
