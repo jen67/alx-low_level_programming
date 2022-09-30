@@ -4,7 +4,8 @@
  * main - print the name of the program 
  * @argc: Stores the number of arguments
  * @argv: Arguments
- * Return: 0
+ *
+ * Return: Always return 0
  */
 
 int main(int argc, char *argv[])
