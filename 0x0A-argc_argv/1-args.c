@@ -1,23 +1,36 @@
 #include <stdio.h>
 #include "main.h"
-
-int main (int argc, char *argv[])
+/**
+ * main - print the name of the program 
+ * @argc: Stores the number of arguments
+ * @argv: Arguments
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
-	int count;
+	(void) argv; /*Ignore argv*/
+	printf("%d\n", argc -1);
 
-	 printf ("This program was called with \"%s\".\n",argv[0]);
-
-	 if (argc > 1)
-	 {
-		 for (count = 1; count < argc; count++)
-		 {
-			 printf("argv[%d] = %s\n", count, argv[count]);
-		 }
-	 }
-	 else
-	 {
-		 printf("The command had no other arguments.\n");
-	 }
-
-	 return 0;
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
