@@ -1,28 +1,61 @@
 #include "main.h"
-
 /**
- * _strdup -> string duplicator function
- * @str: string to be duplicated
- * Return: a string pointer
+ * _strlen - count arrray
+ * @s: array of elements
+ * Return: i
  */
-char *_strdup(char *str)
+
+int _strlen(char *s)
 {
-	int i = 1, j = 0;
-	char *s;
+	unsigned int i;
 
-	if (str == NULL)
-		return (NULL);
-	while (str[i])
-		i++;
-	s = (char *) malloc(i * sizeof(char) + 1);
-	if (s == NULL)
-		return (NULL);
-	while (j < i)
+	i = 0;
+	while (s[i] != '\0') /*Count character of string*/
 	{
-		s[j] = str[j];
-		j++;
+		i++;
 	}
-	s[j] = '\0';
-	return (s);
-}
 
+	return (i);
+}
+/**
+ * str_concat - back a pointer to array
+ * @s1: Array one
+ * @s2: Array two
+ *  Return: Always an array dinamic
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+	char *dst;
+	unsigned int i, j, size;
+
+	/*If the array is empty*/
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	/*count size total*/
+	size = (_strlen(s1) + _strlen(s2) + 1);
+
+	/*malloc*/
+	dst = (char *) malloc(size *sizeof(char));
+
+	if (dst == 0)
+	{
+		return (NULL);
+	}
+
+	/*Concatenate arrays*/
+	for (i = 0; *(s1 + i) != '\0'; i++)
+		*(dst + i) = *(s1 + i);
+
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(dst + i) = *(s2 + j);
+		i++;
+	}
+
+	return (dst);
+}
