@@ -48,6 +48,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	/* Concatenate arrays */
+
 	for (i = 0; *(s1 + i) != '\0'; i++)
 		*(dst + i) = *(s1 + i);
 
