@@ -1,25 +1,21 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_H_FILE
+#define DOG_H_FILE
+
 /**
- * strct dog-A new type describing a dog.
- * @name: the name of the dog.
- * @owner: the owner of the dog.
- * @age:the age of the dog.
+ * struct dog - structure definition of a dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: owner
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
-/*
- * dog_t-Typedef for struct dog
- */
-typedef struct dog dog_t;
-
-void int-dog(struct dog *d, char name,*name,float age,char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_t *new_dog(char *name,float age,*owner);
+dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 #endif
