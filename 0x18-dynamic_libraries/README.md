@@ -1,14 +1,35 @@
-# Code injection: Win the Giga Millions!
+# 📚 0x18. C - Dynamic Libraries
 
-I bought a ticket for the Giga Millions and chose those numbers: 9, 8, 10, 24, 75 + 9. Can you make me win the Jackpot?
+## 🎯 About
 
-```
-/* Giga Millions program                                                                                    
-  * Players may pick six numbers from two separate pools of numbers:                                                
-  * - five different numbers from 1 to 75 and                                                                       
-  * - one number from 1 to 15                                                                                       
-  * You win the jackpot by matching all six winning numbers in a drawing.                                           
-  * Your chances to win the jackpot is 1 in 258,890,850                                                             
-  *                                                                                                                 
-  * usage: ./gm n1 n2 n3 n4 n5 bonus
-```
+This project involves understanding and working with Dynamic Libraries in C.
+
+---
+
+## 📜 Tasks
+
+### 0. A library is not a luxury but one of the necessities of life
+
+* Create a dynamic library `libdynamic.so` with various functions.  
+*Repo:* `alx-low_level_programming` -> `0x18-dynamic_libraries`  
+*Files:* `libdynamic.so`, `main.h`
+
+### 1. Without libraries what have we? We have no past and no future
+
+* Create a script that creates a dynamic library `liball.so` from all the .c files.  
+*Repo:* `alx-low_level_programming` -> `0x18-dynamic_libraries`  
+*Files:* `1-create_dynamic_lib.sh`
+
+### 2. Let's call C functions from Python
+
+* Create a dynamic library for Python-C interaction.  
+*Repo:* `alx-low_level_programming` -> `0x18-dynamic_libraries`  
+*Files:* `100-operations.so`
+
+### 3. Code injection: Win the Giga Millions!
+
+* Make use of `LD_PRELOAD` to manipulate the results.  
+*Repo:* `alx-low_level_programming` -> `0x18-dynamic_libraries`  
+*Files:* `101-make_me_win.sh`
+
+---
