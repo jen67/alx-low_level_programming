@@ -1,8 +1,10 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
-/* Mock the drawing function of the gm binary */
-int* draw_numbers(void)
+int printf(const char *format, ...)
 {
-	static int winning_numbers[6] = {9, 8, 10, 24, 75, 9};
-	return winning_numbers;
+	write(1, "9 8 10 24 75 - 9\n", 17);
+	write(1, "Congratulations, you win the Jackpot!\n", 38);
+	exit(EXIT_SUCCESS);
 }
